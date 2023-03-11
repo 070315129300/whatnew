@@ -18,6 +18,19 @@ use App\Http\Controllers\LoadController;
 
 Route::resource('pages', UserController::class);
 Route::get('/', [LoadController::class, 'index']);
+Route::get('businessnews', [LoadController::class, 'businessnews']);
+Route::get('entertainmentnews', [LoadController::class, 'entertainmentnews']);
+Route::get('whatnews', [LoadController::class, 'whatnews']);
+Route::get('travel', [LoadController::class, 'travel']);
+Route::get('lifestyle', [LoadController::class, 'lifestyle']);
+Route::get('video', [LoadController::class, 'video']);
+
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

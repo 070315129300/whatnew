@@ -32,25 +32,67 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+
 	        	<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+              <a class="nav-link dropdown-toggle" href="whatnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="#">Page 1</a>
-                <a class="dropdown-item" href="#">Page 2</a>
-                <a class="dropdown-item" href="#">Page 3</a>
-                <a class="dropdown-item" href="#">Page 4</a>
+              	<a class="dropdown-item" href="whatnews">Page 1</a>
+
               </div>
             </li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Catalog</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 
-                @if (Route::has('login'))
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="entertainmentnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entertainment</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="entertainmentnews">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="businessnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Business</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="businessnews">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="travel" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="travel">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+                        <a class="dropdown-item" href="#">Page 3</a>
+                        <a class="dropdown-item" href="#">Page 4</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="lifestyle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Life Style</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="lifestyle">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+                        <a class="dropdown-item" href="#">Page 3</a>
+                        <a class="dropdown-item" href="#">Page 4</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="video" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="video">Page 1</a>
+                        <a class="dropdown-item" href="#">Page 2</a>
+                        <a class="dropdown-item" href="#">Page 3</a>
+                        <a class="dropdown-item" href="#">Page 4</a>
+                    </div>
+                </li>
+            @if (Route::has('login'))
                     <a href="{{ url('/') }}" class="nav-link"></a>
 
                     @auth
                 @else
-                <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Log in</a></li>
+                <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
                         @if (Route::has('register'))
                 <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
                             @endif
