@@ -10,9 +10,11 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="{{url('css/style.css')}}">
     <link rel="stylesheet" href="{{url('css/loginstyle.css')}}">
+    <link rel="stylesheet" href="{{url('css/layout.css')}}">
+    <link rel="stylesheet" href="{{url('css/video.css')}}">
 
 </head>
 <body>

@@ -37,16 +37,7 @@
 
 
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('addstaff')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
-              </span>
-                <span class="menu-title">Add Staff</span>
-            </a>
-        </li>
-
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="addadmin">
+            <a class="nav-link" href="{{url('adduser')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -54,17 +45,23 @@
             </a>
         </li>
 
-
-
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('allstaff')}}">
+            <a class="nav-link" href="{{url('addvideos')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
+                <i class="mdi mdi-playlist-play"></i>
               </span>
-                <span class="menu-title">allstaff</span>
+                <span class="menu-title">Add Video</span>
             </a>
         </li>
 
 
 
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('alluser')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+                <span class="menu-title">All User</span>
+            </a>
+        </li>
 </nav>

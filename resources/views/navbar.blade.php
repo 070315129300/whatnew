@@ -81,9 +81,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="video" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="video">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
-                        <a class="dropdown-item" href="#">Page 3</a>
+                        <a class="dropdown-item" href="video">All Videos</a>
+                        <a class="dropdown-item" href="football">Funny Video </a>
+                        <a class="dropdown-item" href="funnyvideos">Football</a>
                         <a class="dropdown-item" href="#">Page 4</a>
                     </div>
                 </li>

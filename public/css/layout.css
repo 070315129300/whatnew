@@ -1,0 +1,23 @@
+#main{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#side-bar-right{
+    width:35%;
+    height: 100%;
+    background: green;
+    float:left;
+}
+#mains{
+   width:65%;
+    height: 400px;
+    background: blue;
+    float:left;
+}
+#footer{
+    clear:both;
+    background: #ffc720;
+    width:100%;
+    height: 80px;
+}

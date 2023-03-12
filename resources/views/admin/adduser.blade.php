@@ -1,31 +1,28 @@
-@include('admin.css')
-@include('admin.sidebar')
-@include('admin.navbar')
+@include('admin.admincss')
+@include('admin.adminsidebar')
+@include('admin.adminnavbar')
 
 
     <section class="header">
         <h2>ADD STAFF</h2>
     </section>
     <section class="form-container">
-        <form action="{{url('insertstaff')}}" method="POST" enctype="multipart/form-data">
+        @if(Session::has('success'))
+            <div class="alert alert-success">{{Session::get('success')}}</div>
+        @endif
+        @if(Session::has('fail'))
+            <div class="alert alert-danger">{{Session::get('fail')}}</div>
+        @endif
+        <form action="{{url('insertuser')}}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="grid">
                 <input
                     type="text"
-                    name="firstname"
+                    name="username"
                     id="username"
                     required
-                    placeholder="Firstname"
-                    maxlength="10"
-                />
-
-                <input
-                    type="text"
-                    name="lastname"
-                    id="username"
-                    required
-                    placeholder="Lastname"
+                    placeholder="username"
                     maxlength="10"
                 />
 
@@ -43,20 +40,6 @@
                     required
                     placeholder="Phone"
                 />
-                <input
-                    type="text"
-                    name="dob"
-                    id="dob"
-                    required
-                    placeholder="Date Of Birth"
-                />
-                <input
-                    type="text"
-                    name="address"
-                    id="address"
-                    required
-                    placeholder="House Address"
-                />
                 <label class="label" for="inputTag">
                     Select Profile Image <br />
                     <i class="fa fa-camera"></i>
@@ -72,4 +55,4 @@
     </section>
 
 
-@include('admin.footer')
+@include('admin.adminfooter')

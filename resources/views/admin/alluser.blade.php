@@ -1,6 +1,6 @@
-@include('admin.css')
-@include('admin.sidebar')
-@include('admin.navbar')
+@include('admin.admincss')
+@include('admin.adminsidebar')
+@include('admin.adminnavbar')
 
 <div class="row ">
     <div class="col-12 grid-margin">
@@ -8,6 +8,12 @@
             <div class="card-body">
                 <h4 class="card-title">Order Status</h4>
                 <div class="table-responsive">
+                    @if(Session::has('success'))
+                        <div class="alert alert-success">{{Session::get('success')}}</div>
+                    @endif
+                    @if(Session::has('fail'))
+                        <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                    @endif
                     <table class="table">
                         <thead>
                         <tr>
@@ -44,4 +50,4 @@
         </div>
     </div>
 </div>
-@include('admin.footer')
+@include('admin.adminfooter')
