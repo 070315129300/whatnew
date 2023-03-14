@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{url('css/loginstyle.css')}}">
     <link rel="stylesheet" href="{{url('css/layout.css')}}">
     <link rel="stylesheet" href="{{url('css/video.css')}}">
+    <link rel="stylesheet" href="{{url('css/styles.css')}}">
+
 
 </head>
 <body>

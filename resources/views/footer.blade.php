@@ -1,10 +1,8 @@
 
-    <link rel="stylesheet" href="css/style.css">
-
 <footer class="footer-04">
-    <div class="container">
+    <div class="container" >
         <div class="row">
-            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4" >
                 <h2 class="footer-heading"><a href="#" class="logo">What New</a></h2>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
