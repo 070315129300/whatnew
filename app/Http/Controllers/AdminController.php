@@ -9,6 +9,9 @@ use Hash;
 
 class AdminController extends Controller
 {
+    public function redirect(){
+
+    }
     public function insertvideo(Request $request)
     {
        $user = new Video;
@@ -47,8 +50,8 @@ class AdminController extends Controller
     }
     public function video()
     {
-        $users = video::all();
-        return view('admin.videos', ['users ' => $users]);
+        $users = Video::all();
+        return view('admin.videos', compact('users'));
     }
 
     public function alluser()

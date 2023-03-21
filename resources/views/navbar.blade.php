@@ -26,17 +26,15 @@
 				<form action="#" class="searchform order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+            <button type="submit" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-
-	        	<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="whatnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+	        	<li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="/" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WhatNew</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="whatnews">Page 1</a>
+              	<a class="dropdown-item" href="/">News</a>
 
               </div>
             </li>
@@ -53,28 +51,28 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="businessnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Business</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="businessnews">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
+                        <a class="dropdown-item" href="businessnews">Businessnews</a>
+
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="travel" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="travel">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
-                        <a class="dropdown-item" href="#">Page 3</a>
-                        <a class="dropdown-item" href="#">Page 4</a>
+                        <a class="dropdown-item" href="travel">All Tour</a>
+                        <a class="dropdown-item" href="tournigeria">Tour De Nigeria</a>
+                        <a class="dropdown-item" href="tourworld">Tour De World</a>
+
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="lifestyle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Life Style</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="lifestyle">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
-                        <a class="dropdown-item" href="#">Page 3</a>
-                        <a class="dropdown-item" href="#">Page 4</a>
+                        <a class="dropdown-item" href="lifestyle">All Life Style</a>
+                        <a class="dropdown-item" href="lagosstyle">Lagos Life Style</a>
+                        <a class="dropdown-item" href="abujastyle">Abuja Life Style</a>
+
                     </div>
                 </li>
 
@@ -82,9 +80,8 @@
                     <a class="nav-link dropdown-toggle" href="video" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
                         <a class="dropdown-item" href="video">All Videos</a>
-                        <a class="dropdown-item" href="football">Funny Video </a>
-                        <a class="dropdown-item" href="funnyvideos">Football</a>
-                        <a class="dropdown-item" href="#">Page 4</a>
+                        <a class="dropdown-item" href="funnyvideos">Funny Video </a>
+                        <a class="dropdown-item" href="football">Football</a>
                     </div>
                 </li>
             @if (Route::has('login'))

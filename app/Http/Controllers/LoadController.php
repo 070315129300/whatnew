@@ -28,15 +28,32 @@ class LoadController extends Controller
     {
         return view('travel.travel');
     }
+    public function tournigeria(){
+        return view('travel.tournigeria');
+    }
     public function video()
     {
         $users = video::all();
         return view('video.videos', ['users ' => $users]);
     }
+    public function funnyvideos(){
+        $user = Video::all();
+        return view('video.funnyvideos', compact('user'));
+    }
+    public function football(){
+        $user = Video::all();
+        return view('video.football', compact('user'));
+    }
 
     public function lifestyle()
     {
         return view('lifestyle.lifestyle');
+    }
+    public function lagosstyle(){
+        return view('lifestyle.lagosstyle');
+    }
+    public function abujastyle(){
+        return view('lifestyle.abujastyle');
     }
     public function privacy()
     {
