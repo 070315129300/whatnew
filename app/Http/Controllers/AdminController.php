@@ -51,7 +51,7 @@ class AdminController extends Controller
     public function video()
     {
         $users = Video::all();
-        return view('admin.videos', compact('users'));
+        return view('video.videos', compact('users'));
     }
 
     public function alluser()
