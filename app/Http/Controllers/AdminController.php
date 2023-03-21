@@ -37,13 +37,6 @@ class AdminController extends Controller
             return back()->with('fail', 'something went wrong, try again');
         }
     }
-
-    public function adduser()
-    {
-
-       return view('admin.adduser', );
-
-    }
     public function addvideos()
     {
         return view('admin.addvideos');
@@ -54,6 +47,10 @@ class AdminController extends Controller
         return view('video.videos', compact('users'));
     }
 
+    public function adduser()
+    {
+       return view('admin.adduser', );
+    }
     public function alluser()
     {
         $user = User::all();
@@ -77,6 +74,30 @@ class AdminController extends Controller
         }else{
             return back()->with('fail', 'something went wrong, try again');
         }
+    }
+    public function addlifestyle(){
+        return view('admin.addlifestyle');
+    }
+    public function insertlifestyle(){
+
+    }
+    public function addtravel(){
+        return view('admin.addtravel');
+    }
+    public function inserttravel(){
+
+    }
+    public function addbusiness(){
+        return view('admin.addbusiness');
+    }
+    public function insertbusiness(){
+
+    }
+    public  function addentertainment(){
+        return view('admin.addentertainment');
+    }
+    public function insertentertainment(){
+
     }
 
 }

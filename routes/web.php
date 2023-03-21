@@ -24,6 +24,7 @@ Route::resource('pages', UserController::class);
 Route::get('/', [LoadController::class, 'index']);
 Route::get('businessnews', [LoadController::class, 'businessnews']);
 Route::get('entertainmentnews', [LoadController::class, 'entertainmentnews']);
+Route::get('sport', [LoadController::class, 'sport']);
 Route::get('whatnews', [LoadController::class, 'whatnews']);
 Route::get('travel', [LoadController::class, 'travel']);
 Route::get('tournigeria',[LoadController::class, 'tournigeria']);
@@ -46,6 +47,15 @@ Route::get('adduser', [AdminController::class, 'adduser']);
 Route::get('addvideos', [AdminController::class, 'addvideos']);
 Route::get('alluser', [AdminController::class, 'alluser']);
 Route::get('video', [AdminController::class, 'video']);
+Route::get('addlifestyle',[AdminController::class,'addlifestyle']);
+Route::get('addtravel',[AdminController::class,'addtravel']);
+Route::get('addbusiness',[AdminController::class,'addbusiness']);
+Route::get('addentertainment',[AdminController::class,'addentertainment']);
+Route::get('insertlifestyle',[AdminController::class,'insertlifestyle']);
+Route::get('inserttravel',[AdminController::class,'inserttravel']);
+Route::get('insertbusiness',[AdminController::class,'insertbusiness']);
+Route::get('insertentertainment',[AdminController::class,'insertentertainment']);
+
 
 
 Auth::routes();

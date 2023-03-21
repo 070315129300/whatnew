@@ -42,8 +42,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="entertainmentnews" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entertainment</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="entertainmentnews">Page 1</a>
-                        <a class="dropdown-item" href="#">Page 2</a>
+                        <a class="dropdown-item" href="entertainmentnews">Entertainment</a>
+                        <a class="dropdown-item" href="sport">Sport</a>
 
                     </div>
                 </li>

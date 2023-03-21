@@ -19,6 +19,9 @@ class LoadController extends Controller
     {
         return view('entertainment.entertainmentnews');
     }
+    public function sport(){
+        return view('entertainment. sport');
+    }
 
     public function whatnews()
     {
