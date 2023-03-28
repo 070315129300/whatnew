@@ -25,7 +25,6 @@ h6{
 p{
     font-size: 16px;
     color: #465b52;
-    margin: 15px 0 15px 0;
 }
 .section-p1 {
     padding: 30px 80px;
@@ -44,7 +43,7 @@ body{
     align-items: flex-start;
     text-align: center;
     min-width: 400px;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     padding: 60px;
@@ -56,8 +55,8 @@ body{
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    min-width: 400px;
-    height: 20vh;
+    min-width: 200px;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     padding: 30px;

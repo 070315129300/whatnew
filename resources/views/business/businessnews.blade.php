@@ -1,4 +1,4 @@
-@include('css')
+@include('css');
 @include('navbar')
 
 <div class="container">
@@ -6,53 +6,7 @@
         <div class="col-12">
             advert
         </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="banner-box" style="background-image: url('images/image2.jpg');">
-                    <h4>Crazy deals</h4>
-                    <h2>Smell good, it your right</h2>
-                    <span>The best perfume deal at demmstore</span>
-                    <button class="btn btn-outline-secondary">learn more</button>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="banner-box1" style="background-image: url('images/image2.jpg');">
-                            <h4>Crazy deals</h4>
-                            <h2>Smell good, it your right</h2>
-                            <span>The best perfume deal at demmstore</span>
-                            <button class="btn btn-outline-secondary">learn more</button>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="banner-box1" style="background-image: url('images/image2.jpg');">
-                            <h4>Crazy deals</h4>
-                            <h2>Smell good, it your right</h2>
-                            <span>The best perfume deal at demmstore</span>
-                            <button class="btn btn-outline-secondary">learn more</button>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="banner-box2" style="background-image: url('images/image2.jpg');">
-                            <h4>Crazy deals</h4>
-                            <h2>Smell good, it your right</h2>
-                            <span>The best perfume deal at demmstore</span>
-                            <button class="btn btn-outline-secondary">learn more</button>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="banner-box3" style="background-image: url('images/image2.jpg');">
-                            <h4>Crazy deals</h4>
-                            <h2>Smell good, it your right</h2>
-                            <span>The best perfume deal at demmstore</span>
-                            <button class="btn btn-outline-secondary">learn more</button>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 {{--advert can stay here--}}
@@ -64,41 +18,74 @@
             <div id="mainsideses">
                 <div class="row">
                     <div class="col-12 mb-3">
-                        entertainment
+                        <h4>Business</h4>
+                        <hr>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-6">
-                            hi
-                        </div>
-                        <div class="col-6">
-                            <div col-12>hi</div>
 
-                            <div col-12>hi</div>
-                            <div col-12>hi</div>
-                        </div>
+                    <div class="row mt-2">
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
+                        @foreach($user as $users)
+                            <div class="col-6 borders" >
+                                <img src="businessimage/{{$users->image}}" alt="lifestyle" width="100%" height="250px"><br>
+                                <button class="mt-3">business</button>
+                                <br>
+                                <span>{{$users->title}}</span><br>
+                                <span>{{$users->date}}</span>
+                            </div>
+                        @endforeach
+
                     </div>
                 </div>
 
-
-                <div class="row">
-                    <div class="col-12">
-                        latest article
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                    <div class="col-6">hi</div>
-                </div>
 
 
             </div>
@@ -129,6 +116,5 @@
         </div>
     </div>
 </div>
-
 
 @include('footer')

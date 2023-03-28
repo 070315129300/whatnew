@@ -5,23 +5,34 @@ namespace App\Http\Controllers;
 use App\Models\Lifestyle;
 use Illuminate\Http\Request;
 use App\Models\Video;
+use App\Models\Business;
+use App\Models\Entertainment;
+use App\Models\Travel;
 
 class LoadController extends Controller
 {
     public function index(){
-        return view('pages.index');
+        $lifestyle = Lifestyle::all();
+        $video = Video::all();
+        $entertainment = Entertainment::all();
+        $travel = Travel::all();
+        $business = Business::all();
+        return view('pages.index', compact('lifestyle', 'video', 'entertainment', 'travel', 'business'));
     }
 
     public function businessnews()
     {
-        return view('business.businessnews');
+        $user = Business::all();
+        return view('business.businessnews', compact('user'));
     }
     public function entertainmentnews()
     {
-        return view('entertainment.entertainmentnews');
+        $user = Entertainment::all();
+        return view('entertainment.entertainmentnews', compact('user'));
     }
     public function sport(){
-        return view('entertainment. sport');
+        $user = Entertainment::all();
+        return view('entertainment.sport', compact('user'));
     }
 
     public function whatnews()
@@ -30,10 +41,16 @@ class LoadController extends Controller
     }
     public function travel()
     {
-        return view('travel.travel');
+        $user = Travel::all();
+        return view('travel.travel', compact('user'));
     }
     public function tournigeria(){
-        return view('travel.tournigeria');
+        $user = Travel::all();
+        return view('travel.tournigeria', compact('user'));
+    }
+    public function tourworld(){
+        $user = Travel::all();
+        return view('travel.tourworld', compact('user'));
     }
     public function video()
     {
@@ -55,10 +72,12 @@ class LoadController extends Controller
         return view('lifestyle.lifestyle', compact('user'));
     }
     public function lagosstyle(){
-        return view('lifestyle.lagosstyle');
+        $user = Lifestyle::all();
+        return view('lifestyle.lagosstyle', compact('user'));
     }
     public function abujastyle(){
-        return view('lifestyle.abujastyle');
+        $user = Lifestyle::all();
+        return view('lifestyle.abujastyle', compact('user'));
     }
     public function privacy()
     {
