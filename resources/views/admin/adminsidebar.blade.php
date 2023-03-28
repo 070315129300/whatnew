@@ -54,14 +54,49 @@
             </a>
         </li>
 
-
-
         <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('alluser')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
                 <span class="menu-title">All User</span>
+            </a>
+        </li>
+
+
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('addbusiness')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+                <span class="menu-title">Add Business</span>
+            </a>
+        </li>
+
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('addentertainment')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+                <span class="menu-title">Add Entertainment</span>
+            </a>
+        </li>
+
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('addlifestyle')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+                <span class="menu-title">Add Lifestyle</span>
+            </a>
+        </li>
+
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('addtravel')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+                <span class="menu-title">Add Travel</span>
             </a>
         </li>
 </nav>

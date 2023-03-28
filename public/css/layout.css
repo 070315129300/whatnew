@@ -1,14 +1,17 @@
 
 #side-bar-right{
-    width:35%;
+    padding-top: 30px;
+    padding-left: 30px;
+    width:30%;
     height: 100%;
-    background: green;
+    background: honeydew;
     float:left;
 }
 #mainsideses{
-   width:65%;
+    padding-top: 30px;
+    width:70%;
     height: 100%;
-    background: blue;
+    background: white;
     float:left;
 }
 #footer{
@@ -16,4 +19,9 @@
     background: #ffc720;
     width:100%;
     height: 80px;
+}
+.border{
+    padding-left:20px ;
+    height: 300px;
+    width: 100%;
 }

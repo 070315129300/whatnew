@@ -8,28 +8,18 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-3">
-            <video controls autoplay muted width="250">
-                <source src='videos/video2.mp4' type='video/mp4'>
-            </video>
-            <br>
-            <span>drake call me on </span>
-            <span>12 march 2023</span>
-        </div>
+        @foreach($user as $users)
+            <div class="col-3">
+                <video controls autoplay muted width="250">
+                    <source src='vivideo/{{$users->video}}' type='video/mp4'>
+                </video>
 
-        <div class="col-3">
-
-            <video controls autoplay muted width="250">
-                <source src='videos/video1.mp4' type='video/mp4'>
-            </video>
-            <br>
-            <span>drake call me on </span>
-            <span>12 march 2023</span>
-        </div>
-
-
-
-
+                <br>
+                <span>{{$users->title}} </span> <br>
+                <span>{{$users->body}}</span>
+                <span>{{$users->date}}</span>
+            </div>
+        @endforeach
 
 
     </div>

@@ -4,7 +4,7 @@
 
 
     <section class="header">
-        <h2>ADD STAFF</h2>
+        <h2>ADD USER</h2>
     </section>
     <section class="form-container">
         @if(Session::has('success'))

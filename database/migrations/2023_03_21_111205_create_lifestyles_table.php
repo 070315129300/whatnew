@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('lifestyles', function (Blueprint $table) {
             $table->id();
+            $table->string('username');
+            $table->string('title');
+            $table->string('body');
+            $table->string('type');
+            $table->string('image');
+            $table->string('video');
+            $table->string('date');
             $table->timestamps();
         });
     }

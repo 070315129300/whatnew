@@ -34,7 +34,7 @@ Route::get('lagosstyle', [LoadController::class, 'lagosstyle']);
 Route::get('abujastyle', [LoadController::class,'abujastyle']);
 Route::get('football', [LoadController::class, 'football']);
 Route::get('funnyvideos', [LoadController::class, 'funnyvideos']);
-//Route::get('video', [LoadController::class, 'video']);
+Route::get('video', [LoadController::class, 'video']);
 Route::get('terms', [LoadController::class, 'terms']);
 Route::get('privacy', [LoadController::class, 'privacy']);
 Route::get('compliances', [LoadController::class, 'compliances']);
@@ -46,15 +46,14 @@ Route::post('insertuser', [AdminController::class, 'insertuser']);
 Route::get('adduser', [AdminController::class, 'adduser']);
 Route::get('addvideos', [AdminController::class, 'addvideos']);
 Route::get('alluser', [AdminController::class, 'alluser']);
-Route::get('video', [AdminController::class, 'video']);
 Route::get('addlifestyle',[AdminController::class,'addlifestyle']);
 Route::get('addtravel',[AdminController::class,'addtravel']);
 Route::get('addbusiness',[AdminController::class,'addbusiness']);
 Route::get('addentertainment',[AdminController::class,'addentertainment']);
-Route::get('insertlifestyle',[AdminController::class,'insertlifestyle']);
-Route::get('inserttravel',[AdminController::class,'inserttravel']);
-Route::get('insertbusiness',[AdminController::class,'insertbusiness']);
-Route::get('insertentertainment',[AdminController::class,'insertentertainment']);
+Route::post('insertlifestyle',[AdminController::class,'insertlifestyle']);
+Route::post('inserttravel',[AdminController::class,'inserttravel']);
+Route::post('insertbusiness',[AdminController::class,'insertbusiness']);
+Route::post('insertentertainment',[AdminController::class,'insertentertainment']);
 
 
 

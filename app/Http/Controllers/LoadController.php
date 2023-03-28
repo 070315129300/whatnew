@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lifestyle;
 use Illuminate\Http\Request;
 use App\Models\Video;
 
@@ -36,8 +37,8 @@ class LoadController extends Controller
     }
     public function video()
     {
-        $users = video::all();
-        return view('video.videos', ['users ' => $users]);
+        $user = video::all();
+        return view('video.videos', compact('user'));
     }
     public function funnyvideos(){
         $user = Video::all();
@@ -50,7 +51,8 @@ class LoadController extends Controller
 
     public function lifestyle()
     {
-        return view('lifestyle.lifestyle');
+        $user = Lifestyle::all();
+        return view('lifestyle.lifestyle', compact('user'));
     }
     public function lagosstyle(){
         return view('lifestyle.lagosstyle');
